@@ -46,6 +46,7 @@ public class merge_Sort {
         int result[] = mergetwosortedArrays(left, right);
 
         k = 0;
+        // Copying this that will start from i=start and goes till i=end
         for (int i = start; i <= end; i++) {
             arr[i] = result[k++];
         }
