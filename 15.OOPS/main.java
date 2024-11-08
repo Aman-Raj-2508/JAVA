@@ -1,7 +1,7 @@
 public class main {
     private String name;
 
-    main() {
+    main() { // constructor
         System.out.println("Constructor called");
         name = "Aman";
 

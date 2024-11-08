@@ -9,6 +9,9 @@ public class bicycleClient {
 
         sportBicycle.braking();
 
+        sportBicycle.gear = 20;
+        System.out.println(sportBicycle.gear);
+
         // Create objects
 
         bicycle touringBicycle = new bicycle();
