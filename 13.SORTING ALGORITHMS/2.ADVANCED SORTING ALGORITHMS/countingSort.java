@@ -17,7 +17,7 @@ public class countingSort {
         // sorting
         int j = 0;
         for (int i = 0; i < count.length; i++) {
-            while (count[i] > 0) { // unttil count is 0 we have to update the orinial array
+            while (count[i] > 0) { // until count is 0 we have to update the orinial array
                 arr[j] = i;
                 j++;
                 count[i]--;
