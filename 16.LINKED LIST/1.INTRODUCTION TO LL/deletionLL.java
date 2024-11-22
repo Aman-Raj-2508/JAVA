@@ -92,7 +92,7 @@ public class deletionLL {
         return removedValue;
     }
 
-    // delelting at index
+    // deleting at index
 
     public int removeAtIdx(int idx) {
         if (idx < 0) {
