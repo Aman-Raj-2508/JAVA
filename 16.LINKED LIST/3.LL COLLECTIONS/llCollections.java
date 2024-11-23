@@ -21,7 +21,7 @@ public class llCollections {
 
         System.out.println(animals.get(2)); // to retrieve from a index
 
-        animals.set(2, "lion"); // to replace the element at particular index
+        animals.set(2, "lion"); // to replace the element at a particular index
         System.out.println(animals);
 
         animals.remove(1); // Removes the element
