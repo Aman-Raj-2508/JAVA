@@ -9,5 +9,5 @@ public class basicLL {
         }
     }
 
-    Node head; // used to point to the first Node or element
+    Node head; // used to point to the first Node or say element
 }
