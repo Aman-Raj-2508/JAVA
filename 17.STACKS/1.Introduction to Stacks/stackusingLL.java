@@ -10,7 +10,7 @@ public class stackusingLL {
         }
     }
 
-    // addatHead
+    // addAtHead
     public void push(int x) {
         Node nn = new Node(x);
         nn.next = this.head;
