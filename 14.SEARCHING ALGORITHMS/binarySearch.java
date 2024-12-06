@@ -15,9 +15,9 @@ public class binarySearch {
                 return mid;
             } else {
                 if (arr[mid] < key) {
-                    start = mid + 1;
+                    start = mid + 1; // lesser values than target
                 } else {
-                    end = mid - 1;
+                    end = mid - 1; // greater values than target
                 }
             }
         }
