@@ -2,15 +2,16 @@ import java.util.Stack;
 
 public class previousGreaterElement {
     public static void main(String[] args) {
-        int arr[] = { 10, 7, 4, 2, 9, 10, 11, 3, 2 };
+        int arr[] = { 100, 80, 60, 70, 60, 75, 85 };
 
         int revArr[] = reverse(arr);
 
-        int result[] = nge(revArr);
+        int result[] = pge(revArr);
 
-        for (int i : result) {
+        for (int i : reverse(result)) {
             System.out.print(i + " ");
         }
+
     }
 
     public static int[] reverse(int arr[]) {
@@ -29,7 +30,7 @@ public class previousGreaterElement {
         return arr;
     }
 
-    public static int[] nge(int revArr[]) {
+    public static int[] pge(int revArr[]) {
 
         int n = revArr.length;
         int output[] = new int[n];
