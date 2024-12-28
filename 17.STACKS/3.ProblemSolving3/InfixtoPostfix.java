@@ -4,7 +4,7 @@ public class InfixtoPostfix {
     public static void main(String[] args) {
 
         System.out.println(infixToPostfix("A+B"));
-        System.out.println(infixToPostfix("A+B*C"));
+        System.out.println(infixToPostfix("1+2*3"));
         System.out.println(infixToPostfix("(A+B)/D*(c+D)"));
 
     }
