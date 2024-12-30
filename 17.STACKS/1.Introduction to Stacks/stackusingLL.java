@@ -52,9 +52,9 @@ public class stackusingLL {
             return -1;
         }
 
-        int removedValue = this.head.data;
+        int peekValue = this.head.data;
 
-        return removedValue;
+        return peekValue;
     }
 
 }
