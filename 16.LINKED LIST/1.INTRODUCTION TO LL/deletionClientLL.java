@@ -1,6 +1,6 @@
 public class deletionClientLL {
     public static void main(String[] args) {
-        deletionLL ll = new deletionLL(); // making the object of inserionLL class
+        deletionLL ll = new deletionLL(); // making the object of deletionLL class
 
         // add first
         ll.addFirst(20);
