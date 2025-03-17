@@ -1,4 +1,3 @@
-import java.util.*;
 
 public class _2stringOperations {
     public static void main(String[] args) {
@@ -31,6 +30,9 @@ public class _2stringOperations {
 
         boolean res2 = first.equals(second);
         System.out.println("res2: " + res2);
+
+        boolean res3 = (first == third);
+        System.out.println("res3: " + res3);
 
         String name1 = new String("Program1");// String Object
         String name2 = new String("Program1");// String Object
