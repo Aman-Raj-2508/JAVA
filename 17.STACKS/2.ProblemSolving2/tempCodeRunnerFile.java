@@ -1,12 +1,12 @@
 import java.util.Stack;
 
-public class previousGreaterElement {
+public class previousSmallerElement {
     public static void main(String[] args) {
         int arr[] = { 100, 80, 60, 70, 60, 75, 85 };
 
         int revArr[] = reverse(arr);
 
-        int result[] = pge(revArr);
+        int result[] = pse(revArr);
 
         for (int i : reverse(result)) {
             System.out.print(i + " ");
@@ -30,7 +30,7 @@ public class previousGreaterElement {
         return arr;
     }
 
-    public static int[] pge(int revArr[]) {
+    public static int[] pse(int revArr[]) {
 
         int n = revArr.length;
         int output[] = new int[n];
@@ -41,7 +41,7 @@ public class previousGreaterElement {
 
         for (int i = 1; i < revArr.length; i++) {
 
-            while ((!st.isEmpty()) && (revArr[st.peek()] < revArr[i])) {
+            while ((!st.isEmpty()) && (revArr[st.peek()] > revArr[i])) {
                 int index = st.pop();
                 output[index] = revArr[i];
             }
@@ -58,49 +58,3 @@ public class previousGreaterElement {
 
     }
 }
-
-// Method - 2
-// import java.util.Stack;
-
-// public class previousGreaterElement {
-// public static void main(String[] args) {
-// int arr[] = { 10, 7, 4, 2, 9, 10, 11, 3, 2 };
-
-// // int revArr[] = reverse(arr);
-
-// int result[] = pge(arr);
-
-// for (int i : result) {
-// System.out.print(i + " ");
-// }
-
-// }
-
-// public static int[] pge(int revArr[]) {
-
-// int n = revArr.length;
-// int output[] = new int[n];
-
-// Stack<Integer> st = new Stack<>();
-
-// // st.push(0);
-
-// for (int i = n - 1; i >= 0; i--) {
-
-// while ((!st.isEmpty()) && (revArr[st.peek()] < revArr[i])) {
-// int index = st.pop();
-// output[index] = revArr[i];
-// }
-
-// st.push(i);
-// }
-
-// while (!st.isEmpty()) {
-// int index = st.pop();
-// output[index] = -1;
-// }
-
-// return output;
-
-// }
-// }

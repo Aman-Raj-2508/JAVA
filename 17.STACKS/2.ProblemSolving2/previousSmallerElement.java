@@ -1,14 +1,15 @@
 import java.util.Stack;
 
-public class previousGreaterElement {
+public class previousSmallerElement {
     public static void main(String[] args) {
         int arr[] = { 100, 80, 60, 70, 60, 75, 85 };
 
         int revArr[] = reverse(arr);
 
-        int result[] = pge(revArr);
+        int result[] = pse(revArr);
+        int result2[] = reverse(result);
 
-        for (int i : reverse(result)) {
+        for (int i : result2) {
             System.out.print(i + " ");
         }
 
@@ -30,7 +31,7 @@ public class previousGreaterElement {
         return arr;
     }
 
-    public static int[] pge(int revArr[]) {
+    public static int[] pse(int revArr[]) {
 
         int n = revArr.length;
         int output[] = new int[n];
@@ -41,7 +42,7 @@ public class previousGreaterElement {
 
         for (int i = 1; i < revArr.length; i++) {
 
-            while ((!st.isEmpty()) && (revArr[st.peek()] < revArr[i])) {
+            while ((!st.isEmpty()) && (revArr[st.peek()] > revArr[i])) {
                 int index = st.pop();
                 output[index] = revArr[i];
             }
@@ -59,16 +60,17 @@ public class previousGreaterElement {
     }
 }
 
-// Method - 2
+// Method 2
+
 // import java.util.Stack;
 
-// public class previousGreaterElement {
+// public class previousSmallerElement {
 // public static void main(String[] args) {
-// int arr[] = { 10, 7, 4, 2, 9, 10, 11, 3, 2 };
+// int arr[] = { 100, 80, 60, 70, 60, 75, 85 };
 
 // // int revArr[] = reverse(arr);
 
-// int result[] = pge(arr);
+// int result[] = pse(arr);
 
 // for (int i : result) {
 // System.out.print(i + " ");
@@ -76,7 +78,7 @@ public class previousGreaterElement {
 
 // }
 
-// public static int[] pge(int revArr[]) {
+// public static int[] pse(int revArr[]) {
 
 // int n = revArr.length;
 // int output[] = new int[n];
@@ -87,11 +89,10 @@ public class previousGreaterElement {
 
 // for (int i = n - 1; i >= 0; i--) {
 
-// while ((!st.isEmpty()) && (revArr[st.peek()] < revArr[i])) {
+// while ((!st.isEmpty()) && (revArr[st.peek()] > revArr[i])) {
 // int index = st.pop();
 // output[index] = revArr[i];
 // }
-
 // st.push(i);
 // }
 
