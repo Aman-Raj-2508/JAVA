@@ -2,12 +2,12 @@ public class basicLL {
 
     class node {
         int data;
-        Node next;
+        node next;
 
-        Node(int data){
-            this.data=data;
+        node(int data) {
+            this.data = data;
         }
     }
 
-    Node head; // used to point to the first Node or say element
+    node head; // used to point to the first node or say element
 }
