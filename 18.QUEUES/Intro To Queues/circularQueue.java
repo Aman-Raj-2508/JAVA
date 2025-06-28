@@ -48,7 +48,7 @@ public class circularQueue {
                 front = (front + 1) % size;
 
             }
-            return front;
+            return result;
         }
 
         // peek function
