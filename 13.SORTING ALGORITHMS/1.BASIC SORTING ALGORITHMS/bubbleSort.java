@@ -1,8 +1,9 @@
 
 public class bubbleSort {
     public static void bubblesort(int arr[]) {
-        boolean isSwapped = false;
+
         for (int i = 0; i < arr.length - 1; i++) {
+            boolean isSwapped = false;
             for (int j = 0; j < arr.length - i - 1; j++) {
                 if (arr[j] > arr[j + 1]) {
                     int temp = arr[j + 1];
