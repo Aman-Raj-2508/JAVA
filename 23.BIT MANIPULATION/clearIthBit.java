@@ -9,6 +9,3 @@ public class clearIthBit {
         System.out.println(clearithbit(10, 1));
     }
 }
-
-
-
